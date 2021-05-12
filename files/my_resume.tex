@@ -36,7 +36,7 @@
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
 \newcommand{\resheading}[1]{{\large \parashade[.9]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}}
 \newcommand{\ressubheading}[4]{
-\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
 		\textbf{#1} & #2 \\
 		\textit{#3} & \textit{#4} \\
 \end{tabular*}\vspace{-6pt}}
@@ -48,71 +48,88 @@
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 \textbf{\huge Alex Burkey}  & 720-319-7194\\
  &  alex.w.burkey@gmail.com \\
- & https://alexburkey.com\\
+ & alexburkey.com\\
 \end{tabular*}
 
 \resheading{Work Experience}
+\vspace{-0.2in}
 \begin{itemize}
-\item
-	\ressubheading{DynAgility LLC.}{Ashburn, VA}{Software Engineer - AWS Solutions Architect Associate}{Mar 2018 -- Present}
+\item[]
+	\ressubheading{Charter Communications}{Denver, CO}{Senior Platforms Engineer}{Feb 2020 -- Present}
 	\begin{itemize}
 	    
-	    \item{Added over \$1,000,000 of new contracts for client by building a pipeline which extracted TBs of raw data to AWS S3, transformed the data using Apache Spark jobs (Java) deployed in AWS EMR, and loaded the data into AWS Redshift and PostgreSQL backing a web application.}
+	    \resitem{Reduced incident resolution times in CDN server group  by +95\% by delivering a data pipeline to ingest, enrich, and aggregate +15 billion log lines per day from all CDN servers.}
 	    
-	    \item{Decreased customer's monthly AWS expenditures \$750 by converting data storage layer from Solr to AWS Redshift.}
+	    \resitem{Led major version upgrade of Terraform infrastructure code repository containing over 50 apps and supporting major AWS infrastructure with zero downtime.}
 	    
-	    \item{Created a React web dashboard backed by a NodeJS REST API displaying deployment data from multiple Kubernetes clusters.}
+	    \resitem{Increased stability of hourly ETL batch job by +95\% by tuning Spark JVM settings and EMR cluster configuration settings.}
 	    
-	    \item{Updated and deployed Dockerized NodeJS demo application to AWS EC2 and configured MongoDB database for client demos to customers.}
+	\end{itemize}
+
+\item[]
+	\ressubheading{DynAgility LLC.}{Ashburn, VA}{Software Engineer - AWS Solutions Architect Associate}{Mar 2018 -- Jan 2020}
+	\begin{itemize}
+	    
+	    \resitem{Added over \$1,000,000 of new contracts for client by building a pipeline which extracted TBs of raw data to AWS S3, transformed the data using Apache Spark jobs (Java) deployed in AWS EMR, and loaded the data into AWS Redshift and PostgreSQL backing a web application.}
+	    
+	    \resitem{Decreased customer's monthly AWS expenditures \$750 by converting data storage layer from Solr to AWS Redshift.}
+	    \iffalse
+	    \resitem{Created a React web dashboard backed by a NodeJS REST API displaying deployment data from multiple Kubernetes clusters.}
+	    \fi
+	    
+	    \resitem{Updated and deployed Dockerized NodeJS demo application to AWS EC2 and configured MongoDB database for client demos to customers.}
 	    
 	\end{itemize}
 	
-\item
+\item[]
 	\ressubheading{Reinventing Geospatial Inc.}{Fairfax, VA}{Software Engineer Intern}{Aug 2016 -- Dec 2016}
 	\begin{itemize}
 	    \resitem{Tripled measurement functionalities by integrating a new rangefinder device.}{}
 	    \resitem{Added immediate feedback on input validation to all user forms; used C\# and .NET}{}
 	\end{itemize}
 
-\item
+\item[]
 	\ressubheading{Check Point Software Technologies}{Rockville, MD}{Incident Response Intern}{Jun 2016 -- Aug 2016}
 	\begin{itemize}
-	  \resitem{Decreased forensics lab reset time by 60\% by automating and standardizing setup of Windows and Linux sandbox environments with Python.}{}
+	    % Come up with some number for reset time
+	    \resitem{Decreased forensics lab reset time by 60\% by automating setup of Windows and Linux sandbox environments with Python.}{}
 		\resitem{Conducted forensic analysis on potentially compromised point of sale system for customer.}
-		\resitem{Provided general IT support for research and forensics lab.}{}
 	\end{itemize}
 
-\item
+\iffalse
+\item[]
 	\ressubheading{Design For America at Virginia Tech}{Blacksburg, VA}{Project Co-Lead}{Sept 2015 -- May 2016}
 	\begin{itemize}
 	    \resitem{Increased access to Virginia Tech athletic clubs and their events by leading a team to design and create an Android application backed by VT Athletics data.}{}
 	\end{itemize}
+\fi
 
 \end{itemize}
 
 \vspace{-0.2in}
 
 \resheading{Education}
+\vspace{-0.2in}
 \begin{itemize}
-\item 
-    \ressubheading{Virginia Tech}{Blacksburg, VA}{B.S. Computer Science}{2012 -- 2017}
+\item[] 
+    \ressubheading{Virginia Tech}{Blacksburg, VA}{B.S. Computer Science}{Graduated 2017}
     \begin{itemize}
-        \resitem{Coursework: Theory of Data Structures \& Algorithms, Systems \& Networking Capstone, Java Cloud Applications, Principles of Computer Security, Cryptography\newline}{}
-        \indent{Java, C, Android, Windows, Linux}
+        \resitem{Coursework: Theory of Data Structures \& Algorithms, Systems \& Networking Capstone, Java Cloud Applications, Principles of Computer Security, Cryptography}{}
+        \resitem{Technologies: Java, C, Android, Windows, Linux}
     \end{itemize}
 \end{itemize}
 
 \vspace{-0.2in}
 
 \resheading{Interests}
+\vspace{-0.2in}
 \begin{itemize}
-    \item {\textbf{Swing Dancing}}
+    \item[] {\textbf{Swing Dancing}}
     \begin{itemize}
         \item {Taught over 200 hours of classes and private lessons in vintage swing dance styles of Lindy Hop, Balboa, Charleston, and Solo Jazz.}
         \item {Founding member and staff member of New Columbia Swing.}
-        \item {Officer of Solely Swing at Virginia Tech for 2 years.}
+        \item {Officer of Solely Swing at Virginia Tech for two years.}
     \end{itemize}
 \end{itemize}
-
 
 \end{document}
